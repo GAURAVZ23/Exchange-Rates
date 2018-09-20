@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { CurrencyViewerModule } from './currency-viewer/currency-viewer.module';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,7 +10,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    // angular module
+    BrowserModule,
+    //custom module
+    CurrencyViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

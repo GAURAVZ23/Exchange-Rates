@@ -1,0 +1,41 @@
+.selectorwrapper {
+    margin-top: 20px;
+    padding: 20px;
+}
+.select {
+  cursor: pointer;
+  position : relative;
+  overflow: hidden;
+  display: block;
+  background: #fff;
+  font-size: 13px;
+  padding: 5px 30px 5px 10px;
+  border-radius: 1px;
+  border: 1px solid #eee;
+}
+
+
+.selectcontainer {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.item {
+    flex: 1;
+}
+
+.title {
+    border: 1px solid rgba(216, 215, 213, 0.25);
+    padding: 0.5em 0.75em;
+    background-color: rgba(147, 128, 108, 0.1);
+    color: #666666;
+}
+.caption {
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+.date {
+    margin-bottom: 15px;
+}

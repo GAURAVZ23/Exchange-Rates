@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="row">
+    <div class="column">
+      <div class="picker">
+        <app-currency-selector [bases]="baseChoices" [query]="currency" (fetch)="onFetchCurrency($event)"></app-currency-selector>
+      </div>
+    </div>
+    <div class="double-column">
+      <div class="viewer">
+        <app-currency-detail [baseKeys]="baseChoices" [item]="exchangeRate" [sort]="sortDirection"
+          (sortclicked)="onSortClicked($event)">
+        </app-currency-detail>
+      </div>
+    </div>
+  </div>
+</div>

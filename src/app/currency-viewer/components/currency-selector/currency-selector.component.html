@@ -1,0 +1,18 @@
+<div class="selectorwrapper">
+  <h2 class="caption">CHOOSE BASE CURRENCY AND DATE</h2>
+  <form (ngSubmit)="handleSubmit(form.value)" #form="ngForm" novalidate>
+    <div class="selectcontainer">
+      <span class="title">Base</span>
+      <select class="select item" name="base" [ngModel]="query?.base">
+        <option *ngFor="let item of bases" [value]="item.key" [selected]="item.key === query?.base">
+          {{item.value}}
+        </option>
+      </select>
+    </div>
+    <div class="date">
+      <span class="title">Date</span>
+      <input class="" type="date" name="date" #date="ngModel" [ngModel]="query?.date">
+    </div>
+    <button type="submit">DISPLAY</button>
+  </form>
+</div>
