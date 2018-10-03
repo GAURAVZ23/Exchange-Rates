@@ -25,7 +25,7 @@ export class CurrencyDetailComponent implements OnInit {
     return this.baseIndexes.includes(base);
   }
 
-  // Sanitize data 
+  // Sanitize data for NaN values 
   coerceInt(value) {
     if (isNaN(value)) {
       return parseInt(value);
